@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dennis">
+    <meta name="Description" content="This is all I've learnd about html so far">
+        <title>Dennis' Page</title>
+        <link rel="icon" href="screenicon.jfif" type="image/x-icon">
+        <link rel="stylesheet" href="styles2.css" type="text/css">
+</head>
+
+<!--Introduction-->
+<body id="Skeleton2">
+    <div>
+        <h1>Welcome to my page</h1>
+        <p class="customp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde similique dignissimos accusantium laudantium minus molestias animi esse veniam tempora ratione ad, dicta cum aliquid iusto quos est? Accusamus, molestiae excepturi?</p>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/478ac790-e6bb-49e4-a84a-5be0cd268315/d7px7be-146cfe38-d8af-4aac-819c-135d287114a3.jpg/v1/fill/w_1024,h_1060,q_75,strp/2d_colored_by_susanswan-d7px7be.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi80NzhhYzc5MC1lNmJiLTQ5ZTQtYTg0YS01YmUwY2QyNjgzMTUvZDdweDdiZS0xNDZjZmUzOC1kOGFmLTRhYWMtODE5Yy0xMzVkMjg3MTE0YTMuanBnIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTEwNjAifV1dfQ.McfbWCFajrARVsugtGI7jWr-_cbs0QaOIhCz9tS4HKE" alt="2-D from gorillaz image">
+    </div>
+    
+    <!--Buttons and links----------------------------------------------------------->
+    <div>
+        <a href="https://www.gorillaz.com/" target="_blank"> Más música de Gorillaz </a> <br>
+        
+        <a href="https://facebook.com" target="_blank"><button>Checkout your facebook</button></a> <br> 
+        
+        <a href="https://www.gorillaz.com/" target="_blank"> <button>Más música de gorillaz</button></a> <br>
+        
+        <a href="#"> Back to top </a> <br>
+    </div>
+    
+    <!--Lists------------------------------------------------------------------------>
+    <div> 
+        <h2>Lista de ingredientes</h2>
+            <ul class="customp1">
+                <li>Tomate</li>
+                <li>Cebolla</li>
+                <li>Carne</li>
+                <li>Ajo</li>
+            </ul>
+        <h2>Lista de objetos</h2>
+            <ol class="customp2">
+                <li>Tenedor</li>
+                <li>Cuchillo</li>
+            </ol>
+    </div>
+
+    <div> 
+        <form>
+            <h2>Example 1</h2>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Herrera"> 
+      </form>
+    </div>
+    
+    <div>
+        <form>
+            <h2>Example 2</h2>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd">
+          </form>
+    </div>
+    
+    <div>
+        <form action="/action_page.php">
+            <h2>Example 3
+            </h2>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+          </form>
+    </div>
+
+    <div>
+        <form action="/action_page.php">
+            <h2>Example 4
+            </h2>
+            <label for="email1">Email:</label><br>
+            <input type="email" id="email1" name="email" placeholder="hello@example.com"><br>
+            <label for="password1">Password</label><br>
+            <input type="password" id="password1" name="password"><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+          </form>
+    </div>
+
+    <div>
+        <form action="/action_page.php">
+            <h2>Select your email provider</h2>
+            <input type="radio" id="gmail" name="emailtype" value="gmail">
+            <label for="gmail">Gmail</label><br>
+            <input type="radio" id="hotmail" name="emailtype" value="hotmail">
+            <label for="hotmail">Hotmail</label><br>
+            <input type="radio" id="outlook" name="emailtype" value="outlook">
+            <label for="outlook">Outlook</label><br>
+          </form>
+    </div>
+
+    <div>
+        <form action="/action_page.php">
+            <h2>Select your birthday</h2>
+            <label for="birthday">My birthday is</label><br>
+            <input type="date" id="birthday" name="birthday">
+            <input type="submit">
+            <input type="reset"><br>
+            <br>
+          </form>
+    </div>
+
+    <div>
+        <form action="/action_page.php">
+            <label for="vol">Modify volume</label><br>
+            <input type="range" id="vol" name="volume" min="0" max="100">
+            <input type="submit">
+            <input type="reset">
+          </form>
+    </div>
+    
+    <div>
+        <form action="/action_page.php">
+            <h2>Example 6
+            </h2>
+            <input type="checkbox" id="18older" name="fname">
+            <label for="18older">18 or older</label><br>
+            <label for="lname">Select your range of age</label><br>
+            <input type="select" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+          </form>
+    </div>
+    
+    <div>
+        <form action="/action_page.php">
+            <label for="phone-select">Select your phone preference</label><br>
+            <select name="phonetype" id="phone-select">
+                <option value="select-option">--Select an option--</option>
+                <option value="android">Android</option>
+                <option value="iphone">Iphone</option>
+                <option value="linux">Linux</option>
+            </select>
+          </form>
+    </div>
+
+    
+</body>
+</html>

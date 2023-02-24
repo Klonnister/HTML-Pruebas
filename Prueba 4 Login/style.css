@@ -1,0 +1,62 @@
+#skeleton{
+    background-image: url(images/10m.jpg)  
+}
+
+.upperbar{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.maintitle{
+    color:black;
+    align-items: center;
+    height: 115px;
+    width: 715px;
+}
+
+.login{
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    background-color: rgba(14, 58, 90, 0.44);
+    margin-left: 10px;
+    padding: 0px 0px 0px 10px;
+    height: 115px;
+    width: 525px;
+    border-radius: 5px;
+    color: white;
+    align-self: center;                                                                                        
+}
+
+.logintitle{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+.noaccount:link, .noaccount:visited{
+    color: white;
+}
+.noaccount:hover, .noaccount:active{
+    color: gray;
+}
+
+
+
+.loginbutton:link, .loginbutton:visited{
+    color: white;
+    background-color: rgba(14, 58, 90, 1);
+    padding: 5px; 
+    text-decoration: none;
+
+}
+.loginbutton:hover{
+    color: white;
+    background-color: rgba(14, 58, 144, 1);
+    padding: 5px; 
+    text-decoration: none;
+}        
