@@ -1,0 +1,19 @@
+/*selector id*/
+
+#Skeleton {
+    background: url("https://img.pixers.pics/pho_wat(s3:700/FO/69/82/93/37/700_FO69829337_7ea985a178abb61467ee5c2a48a532a7.jpg,700,503,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,453,jpg)/fotomurales-fondo-de-la-pared-de-ladrillo-blanco.jpg.jpg")
+}
+
+/*selector tag*/
+h1{
+    background: purple; 
+    color: whitesmoke;
+}
+
+/*selector class*/
+.custom-h1{
+    background: black;
+    color: skyblue
+    
+}
+
