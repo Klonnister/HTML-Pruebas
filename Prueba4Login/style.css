@@ -68,18 +68,42 @@
     background-color: rgba(214, 172, 0, 0.84);
     padding: 8px;
     border-radius: 5px;
+    text-decoration: none;
 }
 .boxesbutton:visited{
     color: rgba(79, 73, 76, 0.74);
     background-color: rgba(214, 172, 0, 0.84);
     padding: 8px;
     border-radius: 5px;  
+    text-decoration: none;
 }
 .boxesbutton:active{
     color: rgba(79, 73, 76, 0.74);
     background-color: rgba(214, 172, 83, 0.69);
     padding: 8px;
     border-radius: 5px;  
+    text-decoration: none;
+}
+.gridbutton:link{
+    color: white;
+    background-color: rgba(58, 87, 18, 0.95);
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.gridbutton:visited{
+    color: white;
+    background-color: rgba(58, 87, 18, 0.8);
+    padding: 8px;
+    border-radius: 5px;  
+    text-decoration: none;
+}
+.gridbutton:active{
+    color: white;
+    background-color: rgba(105, 133, 114, 0.88);
+    padding: 8px;
+    border-radius: 5px;  
+    text-decoration: none;
 }
 
 
@@ -97,6 +121,11 @@
 }
 
 #boxesk > p{
+    color:white;
+    margin: 3px;
+}
+
+#boxesk > dl{
     color:white;
     margin: 3px;
 }
@@ -153,3 +182,37 @@
     font-size: 20px;
     margin: 5px;
 }
+
+/*_________________________________GRID SKELETON______________________________________*/
+
+#grid-skeleton {
+    background: url(images/fondohojas.jpg)
+}
+
+#grid-skeleton > p {
+    margin: 1px;
+}
+
+.grid-container-1 {
+    background-color: rgba(92, 130, 5, 0.79);
+    display: grid;
+    padding: 10px;
+    border-radius: 5px;
+    grid-template-columns: 150px 150px 150px 150px;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.grid-container-1 > div {
+    background-color: rgba(222, 227, 211, 100);
+    padding: 40px 0px;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.grid-box-1 {
+    /*grid-area: 1 / 2 / 4 / 4*/
+}
+
+
