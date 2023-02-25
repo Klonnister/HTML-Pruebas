@@ -1,5 +1,8 @@
 #skeleton{
-    background-image: url(images/10m.jpg)  
+    background-image: url(images/10m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
 }
 
 .upperbar{
@@ -110,6 +113,9 @@
 /*_____________________________BOXES SKELETON__________________________________________*/
 #boxesk {
     background: url("images/pisonegro.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
 }
 
 #boxesk > h1{
