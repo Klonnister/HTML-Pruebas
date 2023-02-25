@@ -101,18 +101,6 @@
     margin: 3px;
 }
 
-
-.numberbox{
-    color:black;
-    background-color: white;
-    text-align: center;
-    width: 150px;
-    padding: 50px 0px;
-    font-size: 20px;
-    margin: 5px;
-}
-
-
 .box1 {
     display:flex;
     background-color: rgba(116, 47, 20, 1);
@@ -123,6 +111,16 @@
     align-items: space-between;
     justify-content: center;
     flex-flow: row wrap;
+    }
+
+    .box1 > div {
+        color:black;
+        background-color: white;
+        text-align: center;
+        width: 150px;
+        line-height: 130px;
+        font-size: 20px;
+        margin: 5px;
     }
 
 .box2 {
@@ -139,10 +137,19 @@
     background-color: rgba(116, 47, 20, 1);
     margin-top: 25px;
     padding: 10px;
-    height: 650px;
+    height: 675px;
     flex-flow: row wrap;
-    align-content: space-around;
-    align-items: center;
-    justify-content: start;
+    align-content: space-between;
+    align-items: start;
+    justify-content: space-between;
+}
 
+.box3 > div {
+    color:black;
+    background-color: white;
+    text-align: center;
+    width: 150px;
+    line-height: 130px;
+    font-size: 20px;
+    margin: 5px;
 }
