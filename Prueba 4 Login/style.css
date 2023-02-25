@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 120px;
+    padding-bottom: 4px;
 }
 
 .maintitle{
@@ -59,4 +60,88 @@
     background-color: rgba(14, 58, 144, 1);
     padding: 5px; 
     text-decoration: none;
+    border-radius: 10px;
 }        
+
+.boxesbutton:link{
+    color: white;
+    background-color: rgba(214, 172, 0, 0.84);
+    padding: 8px;
+    border-radius: 5px;
+}
+.boxesbutton:visited{
+    color: rgba(79, 73, 76, 0.74);
+    background-color: rgba(214, 172, 0, 0.84);
+    padding: 8px;
+    border-radius: 5px;  
+}
+.boxesbutton:active{
+    color: rgba(79, 73, 76, 0.74);
+    background-color: rgba(214, 172, 83, 0.69);
+    padding: 8px;
+    border-radius: 5px;  
+}
+
+
+/*_____________________________BOXES SKELETON__________________________________________*/
+#boxesk {
+    background: url("images/pisonegro.jfif");
+}
+
+#boxesk > h1{
+    color:white
+}
+
+#boxesk > h2{
+    color:white
+}
+
+#boxesk > p{
+    color:white;
+    margin: 3px;
+}
+
+.numberbox{
+    color:black;
+    background-color: white;
+    text-align: center;
+    width: 150px;
+    padding: 50px 0px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+.box1 {
+    display:flex;
+    background-color: rgba(116, 47, 20, 1);
+    margin-top: 25px;
+    padding: 10px;
+    height: 650px;
+    align-content: start;
+    align-items: space-between;
+    justify-content: center;
+    flex-flow: row wrap;
+    }
+
+.box2 {
+    display:flex;
+    background-color: rgba(116, 47, 20, 1);
+    margin-top: 25px;
+    height: 150px;
+    flex-flow: row;
+    justify-content: space-around;
+    }
+
+.box3 {
+    display:flex;
+    background-color: rgba(116, 47, 20, 1);
+    margin-top: 25px;
+    padding: 10px;
+    height: 650px;
+    flex-flow: row wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: start;
+
+}
