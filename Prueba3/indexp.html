@@ -10,7 +10,7 @@
     <link rel="icon" href="screenicon.jfif" type="image/x-icon">    
 </head>
 
-<body style="background-color: gray">
+<body style="background-color: gray;">
     <!--Text format-->
     <h1 style="font-size: 50px;">Welcome to my new page, let's practice what I've learned</h1>
     <h2>Let's check on some text format</h2>
@@ -49,25 +49,42 @@
         </ul>
     <hr>
     <form>
-        <textarea rows="10" width="20"></textarea>
+        <textarea rows="10" style="max-width:250px"></textarea>
         <br><button type="button">Hello</button>
         <input list="browsers">        
 
     </form>
     <hr><br>
 
-    <img src="mario.jpg" alt="mariobros" usemap="#mariomap" height="500px" width="500px" title="Did you know that this image is very special, as there are just a few copies around the world, this is from Mario 64">
+    <img src="mario.jpg" alt="mariobros" usemap="#mariomap" width="100%" title="Did you know that this image is very special, as there are just a few copies around the world, this is from Mario 64">
         <map name="mariomap">
             <area shape="rect" coords="191, 315, 297, 495" href="https://www.facebook.com" target="_blank"> 
             <area shape="circle" coords="63, 135, 23" href="https://www.mariowiki.com/Bullet_Bill" target="_blank"> 
-            <area shape="circle" coords="450,291, 135" href="https://www.mariowiki.com/Red_Coin" target="_blank"> 
-
+            <area shape="circle" coords="450,291, 135" href="https://www.mariowiki.com/Red_Coin" target="_blank">
         </map>
+    <br>
+    <br>        
+    
+    <!--Image formatting practice-->
+    <h1>Let's practice some image formatting</h1>
+    <p>This is an image scaled 100% (width). Notice how it scales up or down according to the size of the browser (resize the browser).</p>
+    <img src="biggest.jpg" alt="Image of planet with some obscene words" style="width:100%">
+    
+    <br>
+    <br>
+    <p>This is an image with the max-width property set to 100%. Notice how it scales down according to the size of the browser, but it doesn't scale up to be larger than its original size (resize the browser).</p>
+    <img src="advtime.jpg" alt="Adventure time image" style="max-width:100%; height:auto;">
+    <br>
+
+    <h2>Responsive web design</h2>
+    <picture>
+        <source media="(max-width:576px)" srcset="https://i.pinimg.com/originals/94/e1/8a/94e18a4739499da42eb861a87b173a21.jpg" alt="Imagen de El grito" width="100%">
+        <source media="(max-width:992px)" srcset="mario.jpg" alt="Mario 64 limited edition image" style="max-width:100%;height:auto">
+        <source media="(min-width:992px)" srcset="biggest.jpg" alt="Biggest piece of s book" style="width:100%">
+        <img src="biggest.jpg" alt="Biggest piece of s book" width="100%">
+    </picture>
 
 
-
-
-
-
+    <div style="position:fixed; right:2px; bottom:2px; border:1px solid brown; background-color: aliceblue;">Hello moto</div>
 </body>
 </html>
