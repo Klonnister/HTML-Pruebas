@@ -8,11 +8,27 @@
     <meta name="description" content="This is a little bit about what I've learned about html">
     <title>Example page</title>
     <link rel="icon" href="screenicon.jfif" type="image/x-icon">    
+
+    <style>
+        .outline {
+            background-color: brown;
+            height: auto;
+            width: 25%;
+            padding: 15px;
+            border: 20px solid white;
+            margin: 5px;
+            outline: 30px solid green;
+            }
+
+    </style>
 </head>
 
 <body style="background-color: gray;">
     <!--Text format-->
-    <h1 style="font-size: 50px;">Welcome to my new page, let's practice what I've learned</h1>
+    <h1 style="font-size: 50px;">Welcome to my new page, let's practice what I've learned so far</h1>
+    <h2>Let's review some basic concepts:</h2>
+        <p>HTML: Hypertext Markup Language</p>
+        <p>CSS: Cascading Style Sheets</p>
     <h2>Let's check on some text format</h2>
         <h3>Text color</h3>
         <ol>
@@ -45,8 +61,61 @@
             <li> <br>
                 <img src="https://i.pinimg.com/originals/94/e1/8a/94e18a4739499da42eb861a87b173a21.jpg" alt="Imagen de El grito" style="height:300px; width:200px"> <br>
                 <cite> El grito </cite> <a href="https://i.pinimg.com/originals/94/e1/8a/94e18a4739499da42eb861a87b173a21.jpg" download> <i>(Save)</i></a> </li>
-                
-        </ul>
+        </ul> <br><br>
+        <div style="background-color: white; outline: 10px solid white">
+            <h2>Text Alignment and Text Direction</h2>
+                <ul style="list-style-type: disc;">
+                    <li>text-align</li>
+                    <li>text-align-last</li>
+                    <li>direction</li>
+                    <li>unicode-bidi</li>
+                    <li>vertical-align</li>
+                </ul>
+        </div>
+        <div style="background-color: black; outline: 10px solid black; color: white">
+            <h2>Background image properties</h2>
+                <ul style="list-style-type: square;">
+                    <li>background-repeat</li>
+                    <li>background-size: <i>cover, 100% 100%</i></li>
+                    <li>background-attachment: <i>fixed, scroll</i></li>
+                    <li>background-position</li>
+                </ul>
+        </div>  
+        <div style="background-color: white; outline: 10px solid white">
+            <h2>CSS Text</h2>
+                <ul style="list-style-type: circle;">
+                    <li>line-height</li>
+                    <li>text-indent <i>sangría</i></li>
+                    <li>text-transform</li>
+                    <li>text-decoration</li>
+                    <li>text-shadow: 2px 2px 5px red;</li>
+        </div>    
+
+        <table style="span: 5px">
+            <tr>
+                <th>Name</th>
+                <th>Cel</th>
+                <th>Country</th>
+
+            </tr>
+            <tr>
+                <td>Josué Hernández</td>
+                <td>+3 123 1234 123</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Francesca Virgollini</td>
+                <td>+5 185 185 1852</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Zlatan Ibrahimovic</td>                
+                <td>+4 456 456 46546</td>
+                <td>Germany</td>
+            </tr>
+        </table>
+
+        <br><br>
     <hr>
     <form>
         <textarea rows="10" style="max-width:250px"></textarea>
@@ -78,13 +147,15 @@
 
     <h2>Responsive web design</h2>
     <picture>
-        <source media="(max-width:576px)" srcset="https://i.pinimg.com/originals/94/e1/8a/94e18a4739499da42eb861a87b173a21.jpg" alt="Imagen de El grito" width="100%">
+        <source media="(max-width:576px)" srcset="https://i.pinimg.com/originals/94/e1/8a/94e18a4739499da42eb861a87b173a21.jpg" alt="Imagen de El grito" style="max-width:100%;height:auto">
         <source media="(max-width:992px)" srcset="mario.jpg" alt="Mario 64 limited edition image" style="max-width:100%;height:auto">
-        <source media="(min-width:992px)" srcset="biggest.jpg" alt="Biggest piece of s book" style="width:100%">
+        <source media="(min-width:992px)" srcset="biggest.jpg" alt="Biggest piece of s book" style="max-width:100%;height:auto">
         <img src="biggest.jpg" alt="Biggest piece of s book" width="100%">
     </picture>
 
 
     <div style="position:fixed; right:2px; bottom:2px; border:1px solid brown; background-color: aliceblue;">Hello moto</div>
+
+<div class="outline">Let's check the outline option. </div>
 </body>
 </html>
