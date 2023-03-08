@@ -10,6 +10,12 @@
     <link rel="icon" href="screenicon.jfif" type="image/x-icon">    
 
     <style>
+
+        ::selection {
+            color: black;
+            background: green;
+            /*You can also apply ::marker*/
+        }
         .outline {
             background-color: brown;
             height: auto;
@@ -19,16 +25,61 @@
             margin: 5px;
             outline: 30px solid green;
             }
+        
+        table {
+           max-width: 1000px;
+        }
 
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+            text-align: center;           
+        }
+
+        th{
+            background-color: seagreen;
+        }
+
+        .tr1 {
+            background-color: lightgreen
+        }
+
+        .tr1:hover {
+            background-color: white;
+        }
+
+        .hoverable p {
+            background-color: green; 
+            padding: 50px 0px; 
+            text-align: center; 
+            display: none
+        }
+
+        .hoverable:hover p {
+            display: block;
+        }
+
+        .opacimage {
+            width: 100%;
+        }
+
+        .opacimage:hover{
+            opacity: 0.60;
+        }
+        
     </style>
 </head>
 
 <body style="background-color: gray;">
+    
     <!--Text format-->
     <h1 style="font-size: 50px;">Welcome to my new page, let's practice what I've learned so far</h1>
+    
     <h2>Let's review some basic concepts:</h2>
         <p>HTML: Hypertext Markup Language</p>
         <p>CSS: Cascading Style Sheets</p>
+    
     <h2>Let's check on some text format</h2>
         <h3>Text color</h3>
         <ol>
@@ -47,6 +98,7 @@
             <li style="color:white; background-color:purple; text-align:center">Text sample</li>
             <li style="color:black; background-color:cyan; text-align:right">Text sample</li>
         </ul>
+        
         <h3>Bold, italic, quotations, abbreviations, addresses and artwork name</h3>
         <ul>
             <li style="color:paleturquoise; background-color: black"><b>Text sample</b> </li>
@@ -62,67 +114,150 @@
                 <img src="https://i.pinimg.com/originals/94/e1/8a/94e18a4739499da42eb861a87b173a21.jpg" alt="Imagen de El grito" style="height:300px; width:200px"> <br>
                 <cite> El grito </cite> <a href="https://i.pinimg.com/originals/94/e1/8a/94e18a4739499da42eb861a87b173a21.jpg" download> <i>(Save)</i></a> </li>
         </ul> <br><br>
+        
+        
+    <h2>Remember these attributes</h2>    
+
+        <div style="background-color: white; outline: 10px solid white">    
+            <h3>Text Alignment and Text Direction</h3>
+            <ul style="list-style-type: disc;">
+                <li>text-align</li>
+                <li>text-align-last</li>
+                <li>direction</li>
+                <li>unicode-bidi</li>
+                <li>vertical-align</li>
+            </ul>
+        </div>
+
+        <div style="background-color: black; outline: 10px solid black; color: white">
+            <h3>Background image properties</h3>
+            <ul style="list-style-type: square;">
+                <li>background-repeat</li>
+                <li>background-size: <i>cover, 100% 100%</i></li>
+                <li>background-attachment: <i>fixed, scroll</i></li>
+                <li>background-position</li>
+            </ul>
+        </div>  
+
         <div style="background-color: white; outline: 10px solid white">
-            <h2>Text Alignment and Text Direction</h2>
-                <ul style="list-style-type: disc;">
-                    <li>text-align</li>
-                    <li>text-align-last</li>
-                    <li>direction</li>
-                    <li>unicode-bidi</li>
-                    <li>vertical-align</li>
+            <h3>CSS Text</h3>
+            <ul style="list-style-type: circle;">
+                <li>line-height</li>
+                <li>text-indent <i>sangría</i></li>
+                <li>text-transform</li>
+                <li>text-decoration</li>
+                <li>text-shadow: 2px 2px 5px red;</li>
+            </ul>
+        </div>
+        
+        <div style="background-color: black; outline: 10px solid black; color: white">
+            <h3>CSS Position</h3>
+            <ul style="list-style-type: square;">
+                <li>Static</li>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+                <li>Sticky</li>
+            </ul>
+        </div>
+
+        <div style="background-color: white; outline: 10px solid white">
+            <h3>Center align elements</h3>
+            <p>You can use any of these options to center elements horizontally:</p>
+            <ul style="list-style-type: circle;">
+                <li>margin: auto</li>
+                <li>text-align: center</li>
+                <li>(image) display: block, margin-right: auto, margin-left: auto, width: x%</li>
+                <li>position: relative, absolute; right: 0 </li>
+                <li>float: right</li>
+            </ul>
+        </div>
+
+        <div style="background-color: black; outline: 10px solid black; color: white">
+            <h3>Vertically align elements</h3>
+            <ul style="list-style-type: square;">
+                <li>padding: 25px, 0</li>
+                <li>flexbox, justify content, align-items</li>
+                <li>position: absolute; top: 50%</li>
                 </ul>
         </div>
-        <div style="background-color: black; outline: 10px solid black; color: white">
-            <h2>Background image properties</h2>
-                <ul style="list-style-type: square;">
-                    <li>background-repeat</li>
-                    <li>background-size: <i>cover, 100% 100%</i></li>
-                    <li>background-attachment: <i>fixed, scroll</i></li>
-                    <li>background-position</li>
-                </ul>
-        </div>  
-        <div style="background-color: white; outline: 10px solid white">
-            <h2>CSS Text</h2>
-                <ul style="list-style-type: circle;">
-                    <li>line-height</li>
-                    <li>text-indent <i>sangría</i></li>
-                    <li>text-transform</li>
-                    <li>text-decoration</li>
-                    <li>text-shadow: 2px 2px 5px red;</li>
-        </div>    
 
-        <table style="span: 5px">
+        <div style="background-color: white; outline: 10px solid white">
+            <h3>CSS combinators</h3>
+            <p>To format descentant, child or sibling items, you can use this combinators:</p>
+            <ul style="list-style-type: circle;">
+                <li>div p</li>
+                <li>div > p</li>
+                <li>div + p</li>
+                <li>div ~ p </li>
+            </ul>
+        </div>
+        
+        <br><br>
+
+    <h2>Reviewing some table formatting</h2>
+        
+        <caption><h3>Example table</h3></caption>
+        <table style="padding: 5px;">
             <tr>
                 <th>Name</th>
                 <th>Cel</th>
                 <th>Country</th>
 
             </tr>
-            <tr>
+            <tr class="tr1">
                 <td>Josué Hernández</td>
                 <td>+3 123 1234 123</td>
                 <td>Canada</td>
             </tr>
-            <tr>
+            <tr class="tr1">
                 <td>Francesca Virgollini</td>
                 <td>+5 185 185 1852</td>
                 <td>France</td>
             </tr>
-            <tr>
+            <tr class="tr1">
                 <td>Zlatan Ibrahimovic</td>                
                 <td>+4 456 456 46546</td>
-                <td>Germany</td>
-            </tr>
-        </table>
+            <td>Germany</td>
 
-        <br><br>
-    <hr>
+            <tr class="tr1">
+                <td colspan="2">Semberendo Mattatuche</td>                
+                <td>Por ahi</td>
+            </tr>
+        </table><br><br>
+    
+    <h2>Here are some examples of the css property position</h2>
+        <ul>
+            <li>Notice how a message is shown in the bottom right corner of the screen, its position is fixed (Hello Moto)</li>
+            <li>"Static" is the default for elements in html, it will only be affected by the page's flow</li>
+            <li style="position: relative; left: 5%; width: 80%;">Relative position is used to determine an element's position in the page flow, use Right, Left, Top and Bottom to edit it (px)</li> <!--Check that if we remove the width attribute, it will be 100% because of its default display property, and it will add an x-scrollbar-->
+            <li>The absolute one is used to determine the position of an element inside a relatively-positioned container (top left corner, center, bottom right corner, etc)</li><br>
+                <div style="position: relative; width: 100%;">
+                    <div style="position: relative; max-width: 750px; height: auto;">
+                        <img src="landscape.jpg" alt="Landscape" width="100%" height="100%" style="opacity: 45%;">
+                        <div style="position: absolute; top: 0; left: 0; font-size: 20px">Top left corner</div>
+                        <div style="position:absolute; bottom: 0; right: 0; font-size: 20px;">Bottom right corner</div>
+                        <div style="position: absolute; top: 50%; width: 100%; text-align: center; font-size: 20px;">Center</div>
+                    </div>
+                    <img src="advtime.jpg" alt="Adventure time" style="position: absolute; right: 30%; top: 0; z-index: -1;" width="25%">
+                    <img src="mario.jpg" alt="Mario 64" style="position: absolute; right: 20px; top: 0; z-index: -2;" width="34%">
+                </div>
+        </ul>
+
+    <h2>This is an interactive option: x:hover y{ } in CSS</h2>
+        <p>Example:</p>
+        <div class="hoverable"> Hover over me, please!
+            <p>Well, thank you!</p>
+        </div>
+
+    <hr> <br>
+    
     <form>
         <textarea rows="10" style="max-width:250px"></textarea>
         <br><button type="button">Hello</button>
         <input list="browsers">        
 
-    </form>
+    </form><br>
     <hr><br>
 
     <img src="mario.jpg" alt="mariobros" usemap="#mariomap" width="100%" title="Did you know that this image is very special, as there are just a few copies around the world, this is from Mario 64">
@@ -135,9 +270,9 @@
     <br>        
     
     <!--Image formatting practice-->
-    <h1>Let's practice some image formatting</h1>
+    <h2>Let's practice some image formatting</h2>
     <p>This is an image scaled 100% (width). Notice how it scales up or down according to the size of the browser (resize the browser).</p>
-    <img src="biggest.jpg" alt="Image of planet with some obscene words" style="width:100%">
+    <img src="biggest.jpg" alt="Image of planet with some obscene words" class="opacimage">
     
     <br>
     <br>
