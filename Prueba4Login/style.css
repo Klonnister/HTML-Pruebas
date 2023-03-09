@@ -3,15 +3,50 @@
     background-repeat: no-repeat;
     background-size: cover;  
     background-attachment: fixed;
+    margin: 0;
 }
 
-.upperbar{
+
+.mainmenu {
+    display: flex;
+    margin: 0;
+    justify-content: start;
+    flex-wrap: wrap;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.mainmenu div a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: black;
+    padding: 15px;
+}
+
+.mainmenu div a:hover   {
+    background-color: gray;
+}
+
+.active {
+    background-color: lightseagreen; /*ask cris about this*/
+}
+
+
+
+
+#upperbar{
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: space-between;
     height: 100%;
     padding-bottom: 4px;
+    padding-left: 5px;
+    padding-top: 40px;
 }
 
 .maintitle{
@@ -115,6 +150,7 @@
     background-repeat: no-repeat;
     background-size: cover;  
     background-attachment: fixed;
+    margin: 0;
 }
 
 #boxesk > h1{
@@ -196,7 +232,8 @@
 /*_________________________________GRID SKELETON______________________________________*/
 
 #grid-skeleton {
-    background: url(images/fondohojas.jpg)
+    background: url(images/fondohojas.jpg);
+    margin: 0;
 }
 
 #grid-skeleton > p {
