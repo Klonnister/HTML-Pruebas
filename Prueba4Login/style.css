@@ -35,6 +35,41 @@
     background-color: lightseagreen; /*ask cris about this*/
 }
 
+.leftmenu {
+    background-color:black;
+    position: fixed;
+    left: 0;
+    margin-top: 50px;
+    width: 150px;
+    height: 100%;
+    overflow: auto;
+}
+
+.leftmenu  div  a{
+    width: 150px;
+    color: white;
+    padding: 15px 0px 15px 5px;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.leftmenu div a:hover {
+    background-color: gray;
+}
+
+.socialbutton{
+    color: white;
+    background-color: black;
+    padding: 20px 5px 20px 0px;
+    width: 15px;
+    position: fixed;
+    left: 141px;
+    top: 50%;
+    border-radius: 8px;
+    text-align: end;
+    z-index: -1;
+}
 
 
 
@@ -45,7 +80,7 @@
     justify-content: space-between;
     height: 100%;
     padding-bottom: 4px;
-    padding-left: 5px;
+    padding-left: 10px;
     padding-top: 40px;
 }
 
@@ -53,7 +88,7 @@
     color:black;
     align-items: center;
     height: 100%;
-    width: 715px;
+    width: 500px;
 }
 
 .login{
@@ -63,6 +98,7 @@
     background-color: rgba(14, 58, 90, 0.44);
     margin-left: 10px;
     padding: 0px 10px 10px 10px;
+    margin-right: 5px;
     height: 100%;
     border-radius: 5px;
     color: white;
@@ -153,20 +189,20 @@
     margin: 0;
 }
 
-#boxesk > h1{
+#boxesk div h1{
     color:white
 }
 
-#boxesk > h2{
+#boxesk div h2{
     color:white
 }
 
-#boxesk > p{
+#boxesk div p{
     color:white;
     margin: 3px;
 }
 
-#boxesk > dl{
+#boxesk div dl{
     color:white;
     margin: 3px;
 }
